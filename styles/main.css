@@ -2,6 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#main-header {
+    text-align: center;
+    background-color: #333;
+    color:white;
+    padding:10px;
+}
+
 .nav {
     list-style-type: none;
     margin:0;
