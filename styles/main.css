@@ -16,7 +16,13 @@ body {
 
 #resume { 
     margin:20px 0px;
-    text-align: center;
+    text-align:center;
+}
+
+#resume iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 #main-header {
@@ -27,11 +33,10 @@ body {
 }
 
 .nav {
-    list-style-type: none;
+    overflow: hidden;
     background-color: #2a3b3b;
     margin:0;
     padding:0;
-    overflow:hidden;
 }
 
 .nav li {
@@ -56,28 +61,48 @@ body {
     color: white;
 }
 
-.dropdownItem {
+.dropdown {
+    float:left;
+    overflow:hidden;
+}
+
+.dropdown .dropdownItem {
+    list-style-type: none;
     display: block;
+    transition-duration: 0.5s;
+    float: left;
+    background-color: #2a3b3b;
     color:white;
     padding:8px 16px;
     text-decoration: none;
 }
 
-.dropdown {
-    position:relative;
-    display:inline-block;
+.nav li:hover, .dropdown:hover .dropdownItem {
+    background-color: #3A4F41;
 }
 
 .dropdownContent {
-    display:none;
+    display: none;
     position:absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropdownContent a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdownContent a:hover {
+    background-color: #ddd;
 }
 
 .dropdown:hover .dropdownContent {
     display:block;
-}
-
-.dropdown:hover dropdownItem {
-    background-color:#3A4F41;
-    color:white;
-}
+} 
