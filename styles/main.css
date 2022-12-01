@@ -33,6 +33,35 @@ body {
     padding:10px;
 }
 
+.project {
+    text-align: left;
+    padding: 10px;
+    margin:5px;
+    margin-left:20px;
+    margin-bottom:20px;
+    width:40%;
+}
+
+.project a {
+    color:#465c5c;
+}
+
+.project a:visited {
+    color:#465c5c;
+}
+
+.border1 {
+    border:3px;
+    border-style:solid;
+    border-radius:30px;
+}
+
+.border2 {
+    border:3px;
+    border-style:dashed;
+    border-radius:30px;
+}
+
 .nav {
     overflow: unset;
     top:0px;
@@ -48,7 +77,8 @@ body {
 .nav li {
     list-style-type: none;
     float: left;
-    margin-bottom:15px;
+    border-radius: 25px;
+    margin:0px 5px 15px 5px;
 }
 
 .nav li a {
@@ -60,11 +90,13 @@ body {
 
 .nav li a:hover {
     background-color:#465c5c;
+    border-radius: 25px;
     color:white;
 }
 
 .active {
     background-color: #217070;
+    border-radius: 25px;
     color: white;
 }
 
